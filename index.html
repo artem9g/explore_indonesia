@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240215222805" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240225000752" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta name="robots" content="noindex, nofollow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +57,105 @@
 		</header>
 
 		<main class="page">
-			<section class="double-section">
+			<section class="page__hero hero heros__container padding-zero">
+				<!-- Оболонка слайдера -->
+				<div class="hero__slider swiper">
+					<!-- Частина слайдера, що рухається -->
+					<div class="hero__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="hero__slide swiper-slide">
+							<picture><source srcset="img/content/hero-bg-1.webp" type="image/webp"><img src="img/content/hero-bg-1.png" alt="#" /></picture>
+							<div class="swiper-lazy-preloader"></div>
+							<div class="hero__container container-large">
+								<div class="hero__slide-texts">
+									<h1 class="hero__slide-title">explore indonesia</h1>
+									<button class="hero__slide-btn red-buttom">Start travelling</button>
+								</div>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<picture><source srcset="img/content/hero-bg-1.webp" type="image/webp"><img loading="lazy" src="img/content/hero-bg-1.png" alt="#" /></picture>
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<picture><source srcset="img/content/hero-bg-1.webp" type="image/webp"><img loading="lazy" src="img/content/hero-bg-1.png" alt="#" /></picture>
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<picture><source srcset="img/content/hero-bg-1.webp" type="image/webp"><img loading="lazy" src="img/content/hero-bg-1.png" alt="#" /></picture>
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+					</div>
+					<!-- Якщо потрібна пагінація -->
+					<div class="swiper-pagination"></div>
+					<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+					<!-- <button type="button" class="swiper-button-prev"></button>
+            <button type="button" class="swiper-button-next"></button> -->
+					<!-- Якщо потрібен скролбар -->
+					<div class="swiper-scrollbar swiper-scrollbar-vertical">
+						<div class="swiper-counter"></div>
+					</div>
+				</div>
+				<div class="hero__container container-large">
+					<div class="hero__top">
+						<!-- <h1 class="hero__title">Explore Indonesia</h1> -->
+						<!-- <button class="hero__button red-buttom">Start travelling</button> -->
+					</div>
+					<div class="hero__bottom">
+						<div class="hero__row-wrapper">
+							<div class="hero__row row-hero">
+								<small class="row-hero__small">01</small>
+								<h4 class="row-hero__title">Title hero</h4>
+								<p class="row-hero__text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+							</div>
+							<div class="hero__row row-hero">
+								<small class="row-hero__small">02</small>
+								<h4 class="row-hero__title">Title hero</h4>
+								<p class="row-hero__text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+							</div>
+							<div class="hero__row row-hero">
+								<small class="row-hero__small">03</small>
+								<h4 class="row-hero__title">Title hero</h4>
+								<p class="row-hero__text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+							</div>
+						</div>
+						<div class="hero__video-block" id="video">
+							<div class="video-control" id="video-play"></div>
+							<div class="video-control" id="video-over"></div>
+							<video id="hero-video" poster="img/video/poster1.png" preload="none" controls type="video/mp4" width="418" height="254" src="img/video/1.mp4"></video>
+						</div>
+					</div>
+				</div>
+				<div class="hero__socials">
+					<a href="https://fb.com">Fb</a>
+					<a href="https://INdeed.com">In</a>
+					<a href="https://twitter.com">Tw</a>
+				</div>
+			</section>
+			<section class="page__activities activities">
+				<div class="activities__container">
+					<div class="activities__row">
+						<div class="activities__image-ibg"><picture><source srcset="img/activities/activities-1.webp" type="image/webp"><img src="img/activities/activities-1.png" alt="#" /></picture></div>
+						<div class="activities__texts">
+							<h3 class="activities__title-row">The walkways of Indonesia spellbind</h3>
+							<p class="activities__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+							<div class="activities__learn-more red-buttom">Learn More</div>
+						</div>
+						<picture><source srcset="img/activities-bg-top.webp" type="image/webp"><img class="activities__bg-row" src="img/activities-bg-top.png" alt="#" /></picture>
+					</div>
+					<div class="activities__row tttt">
+						<div class="activities__texts">
+							<h3 class="activities__title-row">Perfect beaches exude relaxation and fun</h3>
+							<p class="activities__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+							<p class="activities__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+							<div class="activities__learn-more red-buttom">Learn More</div>
+						</div>
+						<div data-da=".tttt,570,0 " class="activities__image-ibg"><picture><source srcset="img/activities/activities-2.webp" type="image/webp"><img src="img/activities/activities-2.png" alt="#" /></picture></div>
+						<picture><source srcset="img/activities-bg-bottom.webp" type="image/webp"><img class="activities__bg-row" src="img/activities-bg-bottom.png" alt="#" /></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__double-section double-section">
 				<div class="double-section__wrapper">
 					<div class="double-section__top explore-secrets">
 						<h2 class="explore-secrets__title">Explore Our Secrets</h2>
@@ -640,7 +738,13 @@
                     orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
                   </p> -->
 								<div class="item-there__block-video video-block">
-									<div class="video-block__video-col"></div>
+									<div class="video-block__video-col">
+										<div class="hero__video-block" id="video">
+											<div class="video-control" id="video-play"></div>
+											<div class="video-control" id="video-over"></div>
+											<video id="hero-video" poster="img/video/poster1.png" preload="none" controls type="video/mp4" width="250" height="166" src="img/video/1.mp4"></video>
+										</div>
+									</div>
 									<div data-showmore class="video-block__texts-col">
 										<h4 class="video-block__title">Travelling there</h4>
 										<p data-showmore-content="300" class="video-block__text">
@@ -711,7 +815,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240215222805"></script>
+	<script src="js/app.min.js?_v=20240225000752"></script>
 </body>
 
 </html>
